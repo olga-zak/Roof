@@ -1,0 +1,10 @@
+.logo {
+    @include font-sizing (28px, 1.6, 1.1px);
+    font-weight: 700;
+    color: $dark-text-color;
+    
+}
+
+.logo_rose-part {
+    color: $theme-rose-color;
+}
