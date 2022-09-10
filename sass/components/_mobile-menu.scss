@@ -6,7 +6,7 @@
 
 .burger-button__icon {
     fill: $dark-text-color;
-    transition: linear 250ms;
+    transition: fill linear 250ms;
 
     &:hover,
     &:focus {
@@ -42,15 +42,15 @@
     &.is-open {
         display: flex;
         flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 }
 
-.menu__item {
-    color: tomato;
-}
+
 .menu__link {
-   @include font-sizing(28px, 1.56, 0.2px);
-   color: tomato;
+   @include font-sizing(18px, 1.56, 0.2px);
+   color: $dark-text-color;
    transition: color linear 250ms;
    padding: 20px;
 
