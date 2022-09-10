@@ -3,3 +3,30 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+@media screen and (min-width: 1200px) {
+    .navigation {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.menu__link {
+    @include font-sizing(15px, 0.09, 0.2px);
+    text-transform: lowercase;
+
+    color: $dark-text-color;
+    transition: color linear 250ms;
+
+    &:hover,
+    &:focus {
+        color: $theme-rose-color
+    }
+}
+}
