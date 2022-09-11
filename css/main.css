@@ -18,6 +18,19 @@
   src: local(""), url("../fonts/poppins-v20-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), url("../fonts/poppins-v20-latin-700.woff") format("woff"), url("../fonts/poppins-v20-latin-700.ttf") format("truetype"), url("../fonts/poppins-v20-latin-700.svg#Poppins") format("svg");
   /* Legacy iOS */
 }
+.about__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -77,6 +90,28 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+.section {
+  padding-bottom: 60px;
+}
+
+.section__suptitle {
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FD8558;
+}
+
+@media screen and (min-width: 1199px) {
+  .section {
+    padding-bottom: 115px;
+  }
+  .section__suptitle {
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 2px;
   }
 }
 .logo {
@@ -184,6 +219,34 @@ body {
     line-height: 1.22;
   }
 }
+.about {
+  padding-top: 60px;
+}
+
+.about__description-text {
+  padding: 20px 50px 20px 0;
+  font-size: 22px;
+  line-height: 1.35;
+  letter-spacing: 0.2px;
+  color: #333333;
+}
+
+.about__introduction-text {
+  padding-right: 15px;
+  font-size: 18px;
+  line-height: 1.36;
+  letter-spacing: 0.2px;
+  color: #222222;
+}
+
+.about__text {
+  padding: 10px 14px 20px 0;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  color: #999999;
+}
+
 @media screen and (max-width: 1199px) {
   .burger-button {
     display: block;

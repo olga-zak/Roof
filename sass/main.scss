@@ -1,9 +1,12 @@
 @import "./base/fonts";
 @import "./utils/vars";
 @import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./base/common";
 @import "./components/container";
+@import "./components/section";
 @import "./components/logo";
 @import "./layout/header";
 @import "./layout/hero";
+@import "./layout/about";
 @import "./components/mobile-menu";
