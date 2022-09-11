@@ -1,0 +1,21 @@
+.section {
+    padding-bottom: 60px;
+}
+
+.section__suptitle {
+    @include font-sizing (12px, 1.1, 1px);
+    text-transform: uppercase;
+
+    color: $theme-rose-color;
+}
+
+@media screen and (min-width: 1199px) {
+    .section {
+        padding-bottom: 115px;
+    }
+
+    .section__suptitle {
+        @include font-sizing (14px, 1.1, 2px);
+    }
+}
+
