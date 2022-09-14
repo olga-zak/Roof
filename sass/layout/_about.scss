@@ -1,4 +1,4 @@
-.about__description-text {
+.about__suptitle {
     padding: 20px 50px 20px 0;
 
     @include font-sizing (22px, 1.35);
@@ -46,7 +46,7 @@
         padding-top: 60px;
     }
 
-    .about__title {
+    .about__subtitle {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -71,7 +71,7 @@
     
     }
 
-    .about__title {
+    .about__subtitle {
         position: absolute;
         top: 52px;
         left: 10px;
@@ -81,11 +81,12 @@
         color: #F7F7F7;
     }
 
-    .about__description-text {
+    .about__suptitle {
         min-width: 510px;
         margin-right: 100px;
         @include font-sizing (40px, 1.35);
     }
+
 
     .about__introduction-text {
         @include font-sizing (18px, 1.56);
