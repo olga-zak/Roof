@@ -18,19 +18,6 @@
   src: local(""), url("../fonts/poppins-v20-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), url("../fonts/poppins-v20-latin-700.woff") format("woff"), url("../fonts/poppins-v20-latin-700.ttf") format("truetype"), url("../fonts/poppins-v20-latin-700.svg#Poppins") format("svg");
   /* Legacy iOS */
 }
-.about__title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 h1,
 h2,
 h3,
@@ -219,10 +206,6 @@ body {
     line-height: 1.22;
   }
 }
-.about {
-  padding-top: 60px;
-}
-
 .about__description-text {
   padding: 20px 50px 20px 0;
   font-size: 22px;
@@ -247,6 +230,90 @@ body {
   color: #999999;
 }
 
+.about__quote_accent {
+  font-style: italic;
+  color: #FD8558;
+}
+
+@media screen and (max-width: 768px) {
+  .about__quote {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .about__quote {
+    margin-top: 26px;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .about {
+    padding-top: 60px;
+  }
+  .about__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .about {
+    position: relative;
+    padding-top: 210px;
+  }
+  .about__title {
+    position: absolute;
+    top: 52px;
+    left: 10px;
+    font-size: 150px;
+    line-height: 0.97;
+    letter-spacing: 0.1px;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: #F7F7F7;
+  }
+  .about__description-text {
+    min-width: 510px;
+    margin-right: 100px;
+    font-size: 40px;
+    line-height: 1.35;
+    letter-spacing: 0.2px;
+  }
+  .about__introduction-text {
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.2px;
+  }
+  .about__text {
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+  }
+  .about__intoduction-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .about__quote {
+    width: 395px;
+    font-size: 26px;
+    line-height: 1.73;
+    letter-spacing: 0.2px;
+  }
+  .about__quote-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 1199px) {
   .burger-button {
     display: block;

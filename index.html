@@ -41,31 +41,39 @@
         <section class="section about">
             <div class="container">
                 <h2 class="about__title">Meist</h2>
-                <p class="section__suptitle">Meie ettevõttest</p>
-                <p class="about__description-text">Noor ettevõte suurejooneliste ideede ja muljetavaldavate tulemustega</p>
-                <div>
-                    <p class="about__introduction-text">Viimasel ajal on eriti teravateks probleemideks saanud keskkonakaitse ja
+                <div class="about__intoduction-container">
+                    <div>
+                        <p class="section__suptitle">Meie ettevõttest</p>
+                    <p class="about__description-text">Noor ettevõte suurejooneliste ideede ja muljetavaldavate tulemustega</p>
+                    </div>
+                    <div>
+                       <p class="about__introduction-text">Viimasel ajal on eriti teravateks probleemideks saanud keskkonakaitse ja
                         taaskasutuse küsimused</p>
                     <p class="about__text">Meie leidsime huvitava lahenduse ehitusmaterjalide ja ehitusjääkide kokkuhoidmiseks. Kuigi meil
                         ei ole veel väga palju kogemust ja meie portfoolio ei ole veel eriti suur, me alati väga hoolikalt ja korrektselt
                         teeme oma tööd. Iga uus projekt on meile nagu laps, kellest me hoolime, oma hinge pannustame ja lõpuks laseme
-                        armastusega iseseisvasse ellu.</p>
+                        armastusega iseseisvasse ellu.</p> 
+                    </div>
                 </div>
-                <picture>
-                    <source srcset="./images/about/about_1920.webp 1x, ./images/about/about_4600.webp 2x"
+                <div class="about__quote-container">
+                   <picture class="about__image">
+                    <source srcset="./images/about/about_640.webp 1x, ./images/about/about_1280.webp 2x"
                         media="(min-width: 1200px)" type="image/webp">
-                    <source srcset="./images/about/about_1920.jpg 1x, ./images/about/about_4600.jpg 2x"
+                    <source srcset="./images/about/about_640.jpg 1x, ./images/about/about_1280.jpg 2x"
                         media="(min-width: 1200px)">
-                    <source srcset="./images/about/about_1280.webp 1x, ./images/about/about_1920.webp 2x"
+                    <source srcset="./images/about/about_640.webp 1x, ./images/about/about_1280.webp 2x"
                         media="(min-width: 768px)" type="image/webp">
-                    <source srcset="./images/about/about_1280.jpg 1x, ./images/about/about_1920.jpg 2x"
+                    <source srcset="./images/about/about_640.jpg 1x, ./images/about/about_1280.jpg 2x"
                         media="(min-width: 768px)">
                     <source srcset="./images/about/about_320.webp 1x, ./images/about/about_640.webp 2x"
                         media="(max-width: 767px)" type="image/webp">
                     <source srcset="./images/about/about_320.jpg 1x, ./images/about/about_640.jpg 2x"
                         media="(max-width: 767px)">
-                    <img src="./images/about/about_320.jpg" alt="mets">
+                    <img src="./images/about/about_320.jpg" alt="mets" loading="lazy">
                 </picture>
+                <p class="about__quote">"Konteinerist võib ehitada väga <span class="about__quote_accent">modernse liikuva </span>maja, kas sulle <span class="about__quote_accent">jätkub julgust</span> et soetada endale <span class="about__quote_accent">eksklusiivse elamu</span>?"</p> 
+                </div>
+                
             </div>
         </section>
         <section>

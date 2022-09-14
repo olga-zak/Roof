@@ -1,12 +1,3 @@
-.about {
-    padding-top: 60px;
-
-}
-
-.about__title {
-    @extend %visually-hidden;
-}
-
 .about__description-text {
     padding: 20px 50px 20px 0;
 
@@ -29,8 +20,97 @@
     color: $light-text-color;
 }
 
+.about__quote_accent {
+    font-style: italic;
+    color: $theme-rose-color;
+}
+
+@media screen and (max-width: 768px) {
+    .about__quote {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    .about__quote {
+        margin-top: 26px;
+        @include font-sizing (16px, 1.7);
+    }
+    
+
+}
+
+@media screen and (max-width: 1199px) {
+    .about {
+        padding-top: 60px;
+    }
+
+    .about__title {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+
+    }
+
+
+}
 
 @media screen and (min-width: 1199px) {
+
+    .about {
+        position: relative;
+        padding-top: 210px;
     
+    }
+
+    .about__title {
+        position: absolute;
+        top: 52px;
+        left: 10px;
+        @include font-sizing (150px, 0.97, 0.1px);
+        font-weight: 400;
+        text-transform: lowercase;
+        color: #F7F7F7;
+    }
+
+    .about__description-text {
+        min-width: 510px;
+        margin-right: 100px;
+        @include font-sizing (40px, 1.35);
+    }
+
+    .about__introduction-text {
+        @include font-sizing (18px, 1.56);
+    }
+
+    .about__text {
+        @include font-sizing (15px, 1.7);
+    }
+
+    .about__intoduction-container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .about__quote {
+        width: 395px;
+        @include font-sizing (26px, 1.73);
+
+    }
+    .about__quote-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+   
     
 }
