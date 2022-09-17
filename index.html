@@ -1,181 +1,354 @@
 <!DOCTYPE html>
 <html lang="est">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Konteinermaja</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container header__container">
-            <nav class="navigation">
-                <div class="navigation__header-container">
-                    <a class="logo" href="./index.html">Konteiner<span class="logo_rose-part">Maja</span></a>
-                    <button type="button" class="burger-button" aria-label="Mobiilse menüü avamine">
-                        <svg class="burger-button__icon" width="35" height="35">
-                            <use class="burger-button__icon-open" href="./images/sprite.svg#menu"></use>
-                            <use class="burger-button__icon-close" href="./images/sprite.svg#cross"></use>
-                        </svg>
-                    </button>
-                </div>
-                <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="#about">Meist</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#advantages">Konteinermaja eelised</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#technology">Tootmisehnoloogia</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#order">Kuidas tellida</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#contacts">Kontaktid</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container header__container">
+        <nav class="navigation">
+          <div class="navigation__header-container">
+            <a class="logo" href="./index.html"
+              >Konteiner<span class="logo_rose-part">Maja</span></a
+            >
+            <button type="button" class="burger-button" aria-label="Mobiilse menüü avamine">
+              <svg class="burger-button__icon" width="35" height="35">
+                <use class="burger-button__icon-open" href="./images/sprite.svg#menu"></use>
+                <use class="burger-button__icon-close" href="./images/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#about">Meist</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#advantages">Konteinermaja eelised</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#technology">Tootmisehnoloogia</a>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#order">Kuidas tellida</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contacts">Kontaktid</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1 class="hero__title">Konteinermaja - konteinerite uus elu</h1> <!-- konteinerite teistmoodi kasutus -->
-                <button class="hero__button" type="button">Hinnapäring</button>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Konteinermaja - konteinerite uus elu</h1>
+          <!-- konteinerite teistmoodi kasutus -->
+          <button class="hero__button" type="button">Hinnapäring</button>
+        </div>
+      </section>
+      <section class="section about" id="about">
+        <div class="container">
+          <p class="about__subtitle">Meist</p>
+          <div class="about__intoduction-container">
+            <div>
+              <h2 class="section__title">Meie ettevõttest</h2>
+              <p class="about__suptitle">
+                Noor ettevõte suurejooneliste ideede ja muljetavaldavate tulemustega
+              </p>
             </div>
-        </section>
-        <section class="section about" id="about">
-            <div class="container">
-                <p class="about__subtitle">Meist</p>
-                <div class="about__intoduction-container">
-                    <div>
-                        <h2 class="section__title">Meie ettevõttest</h2>
-                    <p class="about__suptitle">Noor ettevõte suurejooneliste ideede ja muljetavaldavate tulemustega</p>
-                    </div>
-                    <div>
-                       <p class="about__introduction-text">Viimasel ajal on eriti teravateks probleemideks saanud keskkonakaitse ja
-                        taaskasutuse küsimused</p>
-                    <p class="about__text">Meie leidsime huvitava lahenduse ehitusmaterjalide ja ehitusjääkide kokkuhoidmiseks. Kuigi meil
-                        ei ole veel väga palju kogemust ja meie portfoolio ei ole veel eriti suur, me alati väga hoolikalt ja korrektselt
-                        teeme oma tööd. Iga uus projekt on meile nagu laps, kellest me hoolime, oma hinge pannustame ja lõpuks laseme
-                        armastusega iseseisvasse ellu.</p> 
-                    </div>
-                </div>
-                <div class="about__quote-container">
-                   <picture class="about__image">
-                    <source srcset="./images/about/about_640.webp 1x, ./images/about/about_1280.webp 2x"
-                        media="(min-width: 1200px)" type="image/webp">
-                    <source srcset="./images/about/about_640.jpg 1x, ./images/about/about_1280.jpg 2x"
-                        media="(min-width: 1200px)">
-                    <source srcset="./images/about/about_640.webp 1x, ./images/about/about_1280.webp 2x"
-                        media="(min-width: 768px)" type="image/webp">
-                    <source srcset="./images/about/about_640.jpg 1x, ./images/about/about_1280.jpg 2x"
-                        media="(min-width: 768px)">
-                    <source srcset="./images/about/about_320.webp 1x, ./images/about/about_640.webp 2x"
-                        media="(max-width: 767px)" type="image/webp">
-                    <source srcset="./images/about/about_320.jpg 1x, ./images/about/about_640.jpg 2x"
-                        media="(max-width: 767px)">
-                    <img src="./images/about/about_320.jpg" alt="mets" loading="lazy">
-                </picture>
-                <p class="about__quote">"Konteinerist võib ehitada väga <span class="about__quote_accent">modernse liikuva </span>maja, kas sulle <span class="about__quote_accent">jätkub julgust</span> et soetada endale <span class="about__quote_accent">eksklusiivse elamu</span>?"</p> 
-                </div>
+            <div>
+              <p class="about__introduction-text">
+                Viimasel ajal on eriti teravateks probleemideks saanud keskkonakaitse ja
+                taaskasutuse küsimused
+              </p>
+              <p class="about__text">
+                Meie leidsime huvitava lahenduse ehitusmaterjalide ja ehitusjääkide kokkuhoidmiseks.
+                Kuigi meil ei ole veel väga palju kogemust ja meie portfoolio ei ole veel eriti
+                suur, me alati väga hoolikalt ja korrektselt teeme oma tööd. Iga uus projekt on
+                meile nagu laps, kellest me hoolime, oma hinge pannustame ja lõpuks laseme
+                armastusega iseseisvasse ellu.
+              </p>
             </div>
-        </section>
-        <section class="section advantages" id="advantages">
-            <div class="container">
-                <h2 class="advantages__title">Konteinermaja eelised</h2>
-                <ul class="advantages__list">
-                    <li class="advantages__item">
-                        <svg class="advantages__icon advantages__icon_first" width="55" height="75">
-                            <use href="./images/sprite.svg#cogs"></use>
-                        </svg>
-                        <h3 class="advantages__name advantage__name_first">Kreatiivne välimus</h3>
-                        <p class="advantages__text">Konteinermaja - on väga hea võimalus oma mõttelennu vabastada. Koos me saame sinu eluunistuse ellu viia ja ehitada Eestimaa kõige ilusama ja huvitavama elamu!</p>
-                    </li>
-                    <li class="advantages__item">
-                        <svg class="advantages__icon advantages__icon_second" width="55" height="75">
-                            <use href="./images/sprite.svg#leaf"></use>
-                        </svg>
-                        <h3 class="advantages__name advantage__name_second">Keskonnasäästlik eluviis</h3>
-                        <p class="advantages__text">Tooteprotsessi käigus kasutame ainult looduslikke ja keskonnaohutuid ehitusmaterjale. Seda rohkem, paneme elamu külge päikesepaneele ja soovi korral ka tuulegeneraator. Nii et elektri saamiseks saad kasutada loodusressurse.</p>
-                    </li>
-                    <li class="advantages__item">
-                        <svg class="advantages__icon advantages__icon_third" width="55" height="75">
-                            <use href="./images/sprite.svg#earth"></use>
-                        </svg>
-                        <h3 class="advantages__name advantage__name_third">Vabadus</h3>
-                        <p class="advantages__text">Kujuta ette, et oma ehitisega (kas elumaja või töökojaga) saad sa vajadusel või soovi korral liikuda ühest paigast teisele.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="section technology" id="technology">
-            <div class="container">
-                <h2 class="section__title">Tootmistehnoloogia</h2>
-                <p class="section__suptitle technology__suptitle">protsessi lühikirjeldus</p>
-            </div>
-            <ul class="technology__mobile-gallery">
-                <li>
-                    <picture>
-                        <source srcset="./images/technology/technology_container.webp 1x, ./images/technology/technology_container_600.webp 2x" type="image/webp">
-                        <source srcset="./images/technology/technology_container.jpg 1x, ./images/technology/technology_container_600.jpg 2x">
-                        <img class="technology__gallery-item" src="./images/technology/technology_container.jpg" alt="konteiner" loading="lazy">
-                    </picture>
-                </li>
-                <li>
-                    <picture>
-                        <source srcset="./images/technology/technology_draft.webp 1x, ./images/technology/technology_draft_600.webp 2x" type="image/webp">
-                        <source srcset="./images/technology/technology_draft.jpg 1x, ./images/technology/technology_draft_600.jpg 2x">
-                        <img class="technology__gallery-item" src="./images/technology/technology_draft.jpg" alt="projekt" loading="lazy">
-                    </picture>
-                </li>
-                <li>
-                    <picture>
-                        <source srcset="./images/technology/technology_welding.webp 1x, ./images/technology/technology_welding_600.webp 2x" type="image/webp">
-                        <source srcset="./images/technology/technology_welding.jpg 1x, ./images/technology/technology_welding_600.jpg 2x">
-                        <img class="technology__gallery-item" src="./images/technology/technology_welding.jpg" alt="konteineri keevitus" loading="lazy">
-                    </picture>
-                </li>
-                <li>
-                    <picture>
-                        <source srcset="./images/technology/technology_finishing.webp 1x, ./images/technology/technology_finishing_600.webp 2x" type="image/webp">
-                        <source srcset="./images/technology/technology_finishing.jpg 1x, ./images/technology/technology_finishing_600.jpg 2x">
-                        <img class="technology__gallery-item" src="./images/technology/technology_finishing.jpg" alt="viimistlustööd" loading="lazy">
-                    </picture>
-                </li>
-                <li>
-                    <picture>
-                        <source srcset="./images/technology/technology_house_300.webp 1x, ./images/technology/technology_house.webp 2x" type="image/webp">
-                        <source srcset="./images/technology/technology_house_300.jpg 1x, ./images/technology/technology_house.jpg 2x">
-                        <img class="technology__gallery-item" src="./images/technology/technology_house_300.jpg" alt="valmis konteinermaja" loading="lazy">
-                    </picture>
-                </li>
-
-            </ul>
-            <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-item" }'>
-                <div class="grid-item grid-item--width3"><img class="technology__gallery-item" src="./images/technology/technology_container.jpg" alt="konteiner" loading="lazy"></div>
-                <div class="grid-item grid-item--width2 grid-item--height2"><img class="technology__gallery-item" src="./images/technology/technology_house.jpg" alt="valmis konteinermaja" loading="lazy"></div>
-                <div class="grid-item grid-item--width3"><img class="technology__gallery-item" src="./images/technology/technology_welding.jpg" alt="konteineri keevitus" loading="lazy"></div>
-                <div class="grid-item grid-item--width3"><img class="technology__gallery-item" src="./images/technology/technology_finishing.jpg" alt="viimistlustööd" loading="lazy"> </div>
-                <div class="grid-item grid-item--width3"><img class="technology__gallery-item" src="./images/technology/technology_draft.jpg" alt="projekt" loading="lazy"></div>
-            </div>            
-        </section>
-        <section>
-            <div class="container">
-                <h2>Kuidas tellida</h2>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2>Kontaktid</h2>
-            </div>
-        </section>
+          </div>
+          <div class="about__quote-container">
+            <picture class="about__image">
+              <source
+                srcset="./images/about/about_640.webp 1x, ./images/about/about_1280.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/about/about_640.jpg 1x, ./images/about/about_1280.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/about/about_640.webp 1x, ./images/about/about_1280.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/about/about_640.jpg 1x, ./images/about/about_1280.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/about/about_320.webp 1x, ./images/about/about_640.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/about/about_320.jpg 1x, ./images/about/about_640.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img src="./images/about/about_320.jpg" alt="mets" loading="lazy" />
+            </picture>
+            <p class="about__quote">
+              "Konteinerist võib ehitada väga
+              <span class="about__quote_accent">modernse liikuva </span>maja, kas sulle
+              <span class="about__quote_accent">jätkub julgust</span> et soetada endale
+              <span class="about__quote_accent">eksklusiivse elamu</span>?"
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section advantages" id="advantages">
+        <div class="container">
+          <h2 class="advantages__title">Konteinermaja eelised</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <svg class="advantages__icon advantages__icon_first" width="55" height="75">
+                <use href="./images/sprite.svg#cogs"></use>
+              </svg>
+              <h3 class="advantages__name advantage__name_first">Kreatiivne välimus</h3>
+              <p class="advantages__text">
+                Konteinermaja - on väga hea võimalus oma mõttelennu vabastada. Koos me saame sinu
+                eluunistuse ellu viia ja ehitada Eestimaa kõige ilusama ja huvitavama elamu!
+              </p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon advantages__icon_second" width="55" height="75">
+                <use href="./images/sprite.svg#leaf"></use>
+              </svg>
+              <h3 class="advantages__name advantage__name_second">Keskonnasäästlik eluviis</h3>
+              <p class="advantages__text">
+                Tooteprotsessi käigus kasutame ainult looduslikke ja keskonnaohutuid
+                ehitusmaterjale. Seda rohkem, paneme elamu külge päikesepaneele ja soovi korral ka
+                tuulegeneraator. Nii et elektri saamiseks saad kasutada loodusressurse.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon advantages__icon_third" width="55" height="75">
+                <use href="./images/sprite.svg#earth"></use>
+              </svg>
+              <h3 class="advantages__name advantage__name_third">Vabadus</h3>
+              <p class="advantages__text">
+                Kujuta ette, et oma ehitisega (kas elumaja või töökojaga) saad sa vajadusel või
+                soovi korral liikuda ühest paigast teisele.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section technology" id="technology">
+        <div class="container">
+          <h2 class="section__title">Tootmistehnoloogia</h2>
+          <p class="section__suptitle technology__suptitle">protsessi lühikirjeldus</p>
+        </div>
+        <ul class="technology__mobile-gallery">
+          <li class="technology__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/technology/technology_container.webp     1x,
+                  ./images/technology/technology_container_600.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/technology/technology_container.jpg     1x,
+                  ./images/technology/technology_container_600.jpg 2x
+                "
+              />
+              <img
+                class="technology__gallery-item"
+                src="./images/technology/technology_container.jpg"
+                alt="konteiner"
+                loading="lazy"
+              />
+            </picture>
+            <p class="technology__picture-title">Esimene etapp</p>
+          </li>
+          <li class="technology__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/technology/technology_draft.webp     1x,
+                  ./images/technology/technology_draft_600.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/technology/technology_draft.jpg     1x,
+                  ./images/technology/technology_draft_600.jpg 2x
+                "
+              />
+              <img
+                class="technology__gallery-item"
+                src="./images/technology/technology_draft.jpg"
+                alt="projekt"
+                loading="lazy"
+              />
+            </picture>
+            <p class="technology__picture-title">Teine etapp</p>
+          </li>
+          <li class="technology__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/technology/technology_welding.webp     1x,
+                  ./images/technology/technology_welding_600.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/technology/technology_welding.jpg     1x,
+                  ./images/technology/technology_welding_600.jpg 2x
+                "
+              />
+              <img
+                class="technology__gallery-item"
+                src="./images/technology/technology_welding.jpg"
+                alt="konteineri keevitus"
+                loading="lazy"
+              />
+            </picture>
+            <p class="technology__picture-title">Kolmas etapp</p>
+          </li>
+          <li class="technology__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/technology/technology_finishing.webp     1x,
+                  ./images/technology/technology_finishing_600.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/technology/technology_finishing.jpg     1x,
+                  ./images/technology/technology_finishing_600.jpg 2x
+                "
+              />
+              <img
+                class="technology__gallery-item"
+                src="./images/technology/technology_finishing.jpg"
+                alt="viimistlustööd"
+                loading="lazy"
+              />
+            </picture>
+            <p class="technology__picture-title">Neljas etapp</p>
+          </li>
+          <li class="technology__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/technology/technology_house_300.webp 1x,
+                  ./images/technology/technology_house.webp     2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/technology/technology_house_300.jpg 1x,
+                  ./images/technology/technology_house.jpg     2x
+                "
+              />
+              <img
+                class="technology__gallery-item"
+                src="./images/technology/technology_house_300.jpg"
+                alt="valmis konteinermaja"
+                loading="lazy"
+              />
+            </picture>
+            <p class="technology__picture-title">Viies etapp</p>
+          </li>
+        </ul>
+        <div
+          class="grid"
+          data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-item" }'
+        >
+          <div class="grid-item grid-item--width3">
+            <img
+              class="technology__gallery-item"
+              src="./images/technology/technology_container.jpg"
+              alt="konteiner"
+              loading="lazy"
+            />
+            <p class="technology__picture-title">Esimene etapp</p>
+          </div>
+          <div class="grid-item grid-item--width2 grid-item--height2">
+            <img
+              class="technology__gallery-item"
+              src="./images/technology/technology_house.jpg"
+              alt="valmis konteinermaja"
+              loading="lazy"
+            />
+            <p class="technology__picture-title">Viies etapp</p>
+          </div>
+          <div class="grid-item grid-item--width3">
+            <img
+              class="technology__gallery-item"
+              src="./images/technology/technology_welding.jpg"
+              alt="konteineri keevitus"
+              loading="lazy"
+            />
+            <p class="technology__picture-title">Kolmas etapp</p>
+          </div>
+          <div class="grid-item grid-item--width3">
+            <img
+              class="technology__gallery-item"
+              src="./images/technology/technology_draft.jpg"
+              alt="viimistlustööd"
+              loading="lazy"
+            />
+            <p class="technology__picture-title">Teine etapp</p>
+          </div>
+          <div class="grid-item grid-item--width3">
+            <img
+              class="technology__gallery-item"
+              src="./images/technology/technology_finishing.jpg"
+              alt="projekt"
+              loading="lazy"
+            />
+            <p class="technology__picture-title">Neljas etapp</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2>Kuidas tellida</h2>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2>Kontaktid</h2>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="container">
-            <a class="logo" href="./index.html">KonteinerMaja</a>
-            <ul class="contacts">
-                <li><a href="tel:+37258319207">+372 58 319 207</a></li>
-                <li><a href="mailto:info@konteinerirent.eu">info@konteinerirent.eu</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <a class="logo" href="./index.html">KonteinerMaja</a>
+        <ul class="contacts">
+          <li><a href="tel:+37258319207">+372 58 319 207</a></li>
+          <li><a href="mailto:info@konteinerirent.eu">info@konteinerirent.eu</a></li>
+        </ul>
+      </div>
     </footer>
     <script type="module" src="./js/mobile-menu.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    
-</body>
+  </body>
 </html>

@@ -48,8 +48,8 @@ ul {
 
 img {
   display: block;
-  /*max-width: 100%;
-   height: auto; */
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -347,7 +347,29 @@ body {
   }
 }
 .technology__gallery-item {
+  position: relative;
   border-radius: 8px;
+}
+
+.technology__item {
+  position: relative;
+}
+
+.technology__picture-title {
+  position: absolute;
+  left: 10%;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 30%;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 0.2px;
+  background-color: rgba(224, 224, 224, 0.7);
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -377,16 +399,16 @@ body {
     margin: 0 auto;
   }
   .grid-item {
-    width: 300px;
-    height: 300px;
+    width: 25%;
+    height: auto;
     float: left;
     border: 2px solid #fff;
   }
   .grid-item--width2 {
-    width: 600px;
+    width: 50%;
   }
   .grid-item--height2 {
-    height: 600px;
+    height: auto;
   }
 }
 .advantages__item {
