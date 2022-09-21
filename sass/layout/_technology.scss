@@ -1,6 +1,16 @@
 .technology__gallery-item {
   position: relative;
   border-radius: 8px;
+  cursor: pointer;
+  transition: transform linear 250ms;
+
+  &:hover,
+  &:focus,
+  .technology__picture-title:hover & {
+    transform: scale(1.05);
+    z-index: 10;
+    border: 2px solid #fff;
+  }
 }
 
 .technology__item {
@@ -9,6 +19,7 @@
 
 .technology__picture-title {
   position: absolute;
+  z-index: 15;
   left: 10%;
   bottom: 10px;
 
@@ -64,9 +75,5 @@
   }
   .grid-item--width2 {
     width: 50%;
-  }
-
-  .grid-item--height2 {
-    height: auto;
   }
 }
