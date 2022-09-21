@@ -378,6 +378,10 @@ body {
   background-color: rgba(224, 224, 224, 0.7);
   border-radius: 8px;
   cursor: pointer;
+  transition: transform linear 250ms;
+}
+.technology__picture-title:hover, .technology__picture-title:focus {
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 767px) {
