@@ -1,37 +1,37 @@
 @media screen and (max-width: 1199px) {
-    .burger-button {
+  .burger-button {
     display: block;
     line-height: 0;
     background-color: transparent;
-}
+  }
 
-.burger-button__icon {
+  .button__icon {
     fill: $dark-text-color;
     transition: fill linear 250ms;
 
     &:hover,
     &:focus {
-        fill: $theme-rose-color;
+      fill: $theme-rose-color;
     }
-}
+  }
 
-.burger-button .burger-button__icon-open {
+  .burger-button .button__icon-open {
     display: block;
-}
+  }
 
-.burger-button .burger-button__icon-close {
+  .burger-button .button__icon-close {
     display: none;
-}
+  }
 
-.burger-button.is-open .burger-button__icon-open {
+  .burger-button.is-open .button__icon-open {
     display: none;
-}
+  }
 
-.burger-button.is-open .burger-button__icon-close {
+  .burger-button.is-open .button__icon-close {
     display: block;
-}
+  }
 
-.menu {
+  .menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -41,37 +41,34 @@
     padding: 20px;
     background-color: #fff;
     &.is-open {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
     }
-}
+  }
 
+  .menu__link {
+    @include font-sizing(18px, 1.56, 0.2px);
+    color: $dark-text-color;
+    transition: color linear 250ms;
+    padding: 20px;
 
-.menu__link {
-   @include font-sizing(18px, 1.56, 0.2px);
-   color: $dark-text-color;
-   transition: color linear 250ms;
-   padding: 20px;
+    &:hover,
+    &:focus {
+      color: $theme-rose-color;
+    }
+  }
 
-   &:hover,
-   &:focus {
-    color: $theme-rose-color;
-   }
-   
-   
-}
-
-.navigation__header-container {
+  .navigation__header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .burger-button {
-        display: none;
-    }
+  .burger-button {
+    display: none;
+  }
 }
