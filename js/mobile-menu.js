@@ -11,5 +11,19 @@ function onMenuBtnClick() {
     refs.menuBtn.classList.toggle('is-open');
     refs.menuBtn.setAttribute('aria-expanded', !expanded);
     refs.mobileMenu.classList.toggle('is-open');
+    
+    refs.mobileMenu.addEventListener('click', onMenuClickClose);
 }
-console.log(refs.menuBtn)
+
+function onMenuClickClose(evt) {
+    if (evt.target.nodeName !== 'A') return;
+
+    const expanded = refs.menuBtn.getAttribute('aria-expanded') === 'true' || false;
+
+    refs.menuBtn.classList.toggle('is-open');
+    refs.menuBtn.setAttribute('aria-expanded', !expanded);
+    refs.mobileMenu.classList.toggle('is-open');
+
+    refs.mobileMenu.removeEventListener('click', onMenuClickClose);
+
+}
