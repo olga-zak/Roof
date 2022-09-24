@@ -18,7 +18,7 @@
   src: local(""), url("../fonts/poppins-v20-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), url("../fonts/poppins-v20-latin-700.woff") format("woff"), url("../fonts/poppins-v20-latin-700.ttf") format("truetype"), url("../fonts/poppins-v20-latin-700.svg#Poppins") format("svg");
   /* Legacy iOS */
 }
-.advantages__title {
+.contacts__title, .advantages__title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -231,6 +231,17 @@ body {
 .technology-modal__img {
   height: 200px;
   border-radius: 6px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__input {
+  width: 338px;
+  height: 58px;
+  border: solid 1px #eee;
 }
 
 .header__container {
@@ -610,6 +621,34 @@ body {
     letter-spacing: 0.2px;
   }
 }
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-info__heading {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 2px;
+  color: #999999;
+}
+
+.contact-info__link {
+  font-size: 24px;
+  line-height: 1.38;
+  letter-spacing: 0.2px;
+  color: inherit;
+}
+
+.contact-info__item {
+  width: 303px;
+}
+
+.contact-info__item:not(:last-child) {
+  margin-bottom: 45px;
+}
+
 @media screen and (max-width: 1199px) {
   .burger-button {
     display: block;

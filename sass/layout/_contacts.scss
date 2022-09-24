@@ -1,0 +1,27 @@
+.contacts__title {
+  @extend %visually-hidden;
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-info__heading {
+  @include font-sizing(14px, 1.43, 2px);
+  color: $light-text-color;
+}
+
+.contact-info__link {
+  @include font-sizing(24px, 1.38);
+  color: inherit;
+}
+
+.contact-info__item {
+  width: 303px;
+}
+
+.contact-info__item:not(:last-child) {
+  margin-bottom: 45px;
+}
