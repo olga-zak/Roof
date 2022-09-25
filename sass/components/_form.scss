@@ -1,12 +1,47 @@
 .form {
   display: flex;
   flex-wrap: wrap;
+  gap: 29px;
+  width: 705px;
+}
+
+.form__input,
+.form__textarea {
+  padding-top: 18px;
+  padding-left: 40px;
+  border: 1px solid #eee;
+  outline: none;
+
+  &::placeholder {
+    @include font-sizing(14px, 1.5);
+    color: $light-text-color;
+  }
 }
 
 .form__input {
   width: 338px;
   height: 58px;
-  border: solid 1px #eee;
+  padding-bottom: 18px;
+  transition: border-color linear 250ms;
+
+  &:focus {
+    border-color: $theme-rose-color;
+  }
 }
 
-.form__input
+.form__textarea {
+  display: block;
+  width: 705px;
+  height: 128px;
+  resize: none;
+  transition: border-color linear 250ms;
+
+  &:focus {
+    border-color: $theme-rose-color;
+  }
+}
+
+.form__button:hover,
+.form__button:focus {
+  color: $theme-rose-color;
+}

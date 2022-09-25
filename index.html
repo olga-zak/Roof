@@ -45,7 +45,7 @@
         <div class="container">
           <h1 class="hero__title">Konteinermaja - konteinerite uus elu</h1>
           <!-- konteinerite teistmoodi kasutus -->
-          <button class="hero__button" type="button">Hinnapäring</button>
+          <button class="hero__button button" type="button">Hinnapäring</button>
         </div>
       </section>
       <section class="section about" id="about">
@@ -390,7 +390,7 @@
       <section id="contacts">
         <div class="container contacts__container">
           <h2 class="contacts__title">Kontaktid</h2>
-          <address class="conatct-info">
+          <address class="contact-info">
             <ul>
               <li class="contact-info__item">
                 <p class="contact-info__heading">aadress</p>
@@ -435,8 +435,14 @@
               />
             </label>
             <label>
-              <textarea name="message" placeholder="Sõnum*" required></textarea>
+              <textarea
+                class="form__textarea"
+                name="message"
+                placeholder="Sõnum*"
+                required
+              ></textarea>
             </label>
+            <button class="form__button button" type="submit">Saada sõnum</button>
           </form>
         </div>
       </section>

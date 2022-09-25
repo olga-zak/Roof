@@ -1,0 +1,15 @@
+.button {
+  display: block;
+  padding: 17px 38px;
+  @include font-sizing(14px, 1.5);
+  font-weight: 700;
+
+  color: $white-text-color;
+  background-color: $theme-rose-color;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 3px solid $theme-rose-color;
+  }
+}

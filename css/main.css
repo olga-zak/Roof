@@ -145,6 +145,21 @@ body {
   color: #FD8558;
 }
 
+.button {
+  display: block;
+  padding: 17px 38px;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #FD8558;
+}
+.button:hover, .button:focus {
+  background-color: transparent;
+  border: 3px solid #FD8558;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -236,12 +251,49 @@ body {
 .form {
   display: flex;
   flex-wrap: wrap;
+  gap: 29px;
+  width: 705px;
+}
+
+.form__input,
+.form__textarea {
+  padding-top: 18px;
+  padding-left: 40px;
+  border: 1px solid #eee;
+  outline: none;
+}
+.form__input::placeholder,
+.form__textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: #999999;
 }
 
 .form__input {
   width: 338px;
   height: 58px;
-  border: solid 1px #eee;
+  padding-bottom: 18px;
+  transition: border-color linear 250ms;
+}
+.form__input:focus {
+  border-color: #FD8558;
+}
+
+.form__textarea {
+  display: block;
+  width: 705px;
+  height: 128px;
+  resize: none;
+  transition: border-color linear 250ms;
+}
+.form__textarea:focus {
+  border-color: #FD8558;
+}
+
+.form__button:hover,
+.form__button:focus {
+  color: #FD8558;
 }
 
 .header__container {
@@ -291,19 +343,7 @@ body {
 }
 
 .hero__button {
-  display: block;
   margin: 0 auto;
-  padding: 17px 38px;
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.2px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #FD8558;
-}
-.hero__button:hover, .hero__button:focus {
-  background-color: transparent;
-  border: 3px solid #FD8558;
 }
 
 @media screen and (max-width: 767px) {
@@ -625,6 +665,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 115px;
 }
 
 .contact-info__heading {
