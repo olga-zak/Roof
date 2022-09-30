@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 234px;
+  background-color: #406ce6;
+}
+
+.footer-contacts {
+  display: flex;
+  margin-top: 17px;
+  gap: 30px;
+}
+
+.footer__link {
+  @include font-sizing(15px, 1.5);
+  padding: 8px;
+  color: #eee;
+}
+
+.footer__link_second {
+  position: relative;
+}
+
+.footer__link_second::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: 35%;
+  width: 1px;
+  height: 12px;
+  background-color: #eee;
+}

@@ -335,8 +335,8 @@ body {
   }
   .menu {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    width: 100%;
+    justify-content: space-between;
   }
   .menu__link {
     font-size: 15px;
@@ -722,7 +722,6 @@ body {
   .contacts__container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     margin-bottom: 90px;
   }
   .contact-info__link {
@@ -749,6 +748,44 @@ body {
     margin-bottom: 45px;
   }
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 234px;
+  background-color: #406ce6;
+}
+
+.footer-contacts {
+  display: flex;
+  margin-top: 17px;
+  gap: 30px;
+}
+
+.footer__link {
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  padding: 8px;
+  color: #eee;
+}
+
+.footer__link_second {
+  position: relative;
+}
+
+.footer__link_second::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: 35%;
+  width: 1px;
+  height: 12px;
+  background-color: #eee;
+}
+
 @media screen and (max-width: 1199px) {
   .burger-button {
     display: block;
