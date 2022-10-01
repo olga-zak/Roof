@@ -1,10 +1,14 @@
 .footer {
+  height: 234px;
+  background-color: #406ce6;
+}
+
+.footer-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 234px;
-  background-color: #406ce6;
+  height: 80%;
 }
 
 .footer-contacts {
@@ -13,10 +17,15 @@
   gap: 30px;
 }
 
-.footer__link {
+.footer__link,
+.copyright {
   @include font-sizing(15px, 1.5);
   padding: 8px;
   color: #eee;
+}
+
+.copyright {
+  text-align: center;
 }
 
 .footer__link_second {

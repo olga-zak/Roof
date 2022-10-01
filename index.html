@@ -269,7 +269,9 @@
               põranda vastavalt projektile. Ja alustame viimistlustööga: elekter, veevarustus,
               kanalisatsioon, küte. Seejärel lisasoojustusega metallkarkassile paigaldatakse
               viimistusplaat (OSB- või kipsplaat). Järgmisena kliendi nõudmisel teostatakse seinte
-              ja lagede lõppviimistlust.
+              ja lagede lõppviimistlust. Viimasel etapil soojustatakse ja viimistletakse põrandat ja
+              paigaldatakse pistikute ja lülitite dekoratiivelemendid, ning termostaadid ja
+              valgustid.
             </p>
           </li>
           <li class="technology__item">
@@ -296,8 +298,8 @@
             </picture>
             <p class="technology__picture-title">Viies etapp</p>
             <p class="technology__description">
-              Valmis! Võib elamu sisustada. Viimistlustööd ning konteinerite monteerimist võib
-              teostada nii meie, kui ka tellija territooriumil.
+              Valmis! Võib tuua mööblit tuppa. Viimistlustööd ning konteinerite monteerimine saab
+              olla teostatud tootmisplatsil või kliendi territooriumil.
             </p>
           </li>
         </ul>
@@ -324,8 +326,8 @@
             />
             <p class="technology__picture-title">Viies etapp</p>
             <p class="technology__description">
-              Valmis! Võib elamu sisustada. Viimistlustööd ning konteinerite monteerimist võib
-              teostada nii meie, kui ka tellija territooriumil.
+              Valmis! Võib tuua mööblit tuppa. Viimistlustööd ning konteinerite monteerimine saab
+              olla teostatud tootmisplatsil või kliendi territooriumil.
             </p>
           </div>
           <div class="grid-item">
@@ -366,14 +368,16 @@
               põranda vastavalt projektile. Ja alustame viimistlustööga: elekter, veevarustus,
               kanalisatsioon, küte. Seejärel lisasoojustusega metallkarkassile paigaldatakse
               viimistusplaat (OSB- või kipsplaat). Järgmisena kliendi nõudmisel teostatakse seinte
-              ja lagede lõppviimistlust.
+              ja lagede lõppviimistlust. Viimasel etapil soojustatakse ja viimistletakse põrandat ja
+              paigaldatakse pistikute ja lülitite dekoratiivelemendid, ning termostaadid ja
+              valgustid.
             </p>
           </div>
         </div>
         <div class="backdrop backdrop_is-hidden">
           <div class="technology-modal">
-            <button type="button" class="technology-button" aria-label="Mobiilse menüü avamine">
-              <svg class="technology-button__icon" width="35" height="35">
+            <button type="button" class="modal-button" aria-label="Kirjelduse sulgemine">
+              <svg class="modal-button__icon" width="35" height="35">
                 <use href="./images/sprite.svg#cross"></use>
               </svg>
             </button>
@@ -441,8 +445,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer">
+    <footer class="footer">
+      <div class="footer-wrap">
         <a class="logo" href="./index.html">Konteiner<span class="logo_rose-part">Maja</span></a>
         <ul class="footer-contacts">
           <li><a class="footer__link" href="tel:+37258319207">+372 58 319 207</a></li>
@@ -453,7 +457,75 @@
           </li>
         </ul>
       </div>
+      <p class="copyright">©KonteinerMaja. All rights reserved 2022.</p>
     </footer>
+    <div class="backdrop">
+      <div class="order-modal">
+        <button type="button" class="modal-button" aria-label="Hinnapäringu vormi avamine">
+          <svg class="modal-button__icon" width="35" height="35">
+            <use href="./images/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <form class="order-form">
+          <p class="order-form__title">Täitke palun allolev vorm võimalikult detailselt:</p>
+          <label class="order-form__field"
+            ><span class="order-form__field-name">Nimi:</span>
+            <input class="order-form__input" type="text" name="name" required />
+          </label>
+          <label class="order-form__field"
+            ><span class="order-form__field-name">Telefon:</span>
+            <input class="order-form__input" type="tel" name="telefon" required />
+          </label>
+          <label class="order-form__field"
+            ><span class="order-form__field-name">E-post:</span>
+            <input class="order-form__input" type="email" name="e-post" required />
+          </label>
+          <label class="order-form__field"
+            ><span class="order-form__field-name">Konteinermaja paigalduse aadress:</span>
+            <input class="order-form__input" type="text" name="aadress" />
+          </label>
+          <label class="order-form__field"
+            ><span class="order-form__field-name"
+              >Paigalduspinna valmidustaseme kirjeldus (paigaldusaluse seisund):</span
+            >
+            <input class="order-form__input" type="text" name="paigalduspind" />
+          </label>
+          <label class="order-form__field"
+            ><span class="order-form__field-name">Orienteeruv projekti valmiduse tähtaeg:</span>
+            <input class="date-input" type="date" min="2022-01-01" max="2030-01-01" />
+          </label>
+          <p class="order-form__field-name">Moodulmaja ehituse koht:</p>
+          <label class="radio-btn__field" for="koht"
+            ><input
+              class="radio-btn"
+              type="radio"
+              value="meie territoriumil"
+              id="koht"
+              name="ehituse_koht"
+            />meie territoriumil</label
+          >
+          <label class="radio-btn__field radio-btn__field_second" for="koht"
+            ><input
+              class="radio-btn"
+              type="radio"
+              value="paigalduse aadressil"
+              id="koht"
+              name="ehituse_koht"
+            />paigalduse aadressil</label
+          >
+
+          <label
+            ><span class="order-form__field-name">Palun lisage projekti fail:</span>
+            <input class="order-form__file-upload" type="file" multiple name="projekt" />
+          </label>
+          <label
+            ><span class="order-form__field-name">Märkused:</span>
+            <textarea class="order-form__textarea" name="märkused"></textarea>
+          </label>
+          <button class="form__button button order-form_button" type="submit">Saada</button>
+        </form>
+      </div>
+    </div>
     <script type="module" src="./js/mobile-menu.js"></script>
     <script type="module" src="./js/technology-modal.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>

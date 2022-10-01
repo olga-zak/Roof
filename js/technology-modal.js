@@ -3,7 +3,7 @@ const refs = {
     mobContainer: document.querySelector('.technology__mobile-gallery'),
     technologyBackdrop: document.querySelector('.backdrop'),
     technologyModal: document.querySelector('.technology-modal__content'),
-    closeBtn: document.querySelector('.technology-button'),
+    closeBtn: document.querySelector('.modal-button'),
 };
 
 refs.container.addEventListener('click', onClickModalOpen);

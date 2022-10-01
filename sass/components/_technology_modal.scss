@@ -20,7 +20,7 @@
 .backdrop.backdrop_is-hidden .technology-modal {
   transform: translate(-50%, -50%) scale(0.25);
 }
-.technology-button {
+.modal-button {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -29,7 +29,7 @@
   background-color: transparent;
 }
 
-.technology-button__icon {
+.modal-button__icon {
   fill: $dark-text-color;
   transition: fill linear 250ms;
 
