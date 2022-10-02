@@ -17,6 +17,7 @@ function onHeroBtnClickModalOpen() {
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
   const body = document.body;
   body.style.position = 'fixed';
+  body.style.width = '100%';
   body.style.top = `-${scrollY}`;
 
   window.addEventListener('keydown', onEscClose);
@@ -37,8 +38,8 @@ function onOrderBtnClickModalClose() {
 }
 
 function onEscClose(evt) {
-  if (evt.key === 'Escape')
-    refs.orderBackdrop.classList.add('backdrop_is-hidden');
+  if (evt.key !== 'Escape') return;
+  refs.orderBackdrop.classList.add('backdrop_is-hidden');
   const body = document.body;
   const scrollY = body.style.top;
   body.style.position = '';
