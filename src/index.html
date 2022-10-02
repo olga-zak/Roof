@@ -545,42 +545,70 @@
           </li>
         </ul>
       </div>
-      <p class="copyright">©KonteinerMaja. All rights reserved 2022.</p>
+      <p class="copyright">
+        ©KonteinerMaja. All rights reserved 2022. Powered by anvomm.
+      </p>
     </footer>
-    <!-- <div class="backdrop">
+    <div class="backdrop order__backdrop backdrop_is-hidden">
       <div class="order-modal">
-        <button type="button" class="modal-button" aria-label="Hinnapäringu vormi avamine">
+        <button
+          type="button"
+          class="modal-button order__button"
+          aria-label="Hinnapäringu vormi avamine"
+        >
           <svg class="modal-button__icon" width="35" height="35">
             <use href="./images/sprite.svg#cross"></use>
           </svg>
         </button>
         <form class="order-form">
-          <p class="order-form__title">Täitke palun allolev vorm võimalikult detailselt:</p>
+          <p class="order-form__title">
+            Täitke palun allolev vorm võimalikult detailselt:
+          </p>
           <label class="order-form__field"
             ><span class="order-form__field-name">Nimi:</span>
             <input class="order-form__input" type="text" name="name" required />
           </label>
           <label class="order-form__field"
             ><span class="order-form__field-name">Telefon:</span>
-            <input class="order-form__input" type="tel" name="telefon" required />
+            <input
+              class="order-form__input"
+              type="tel"
+              name="telefon"
+              required
+            />
           </label>
           <label class="order-form__field"
             ><span class="order-form__field-name">E-post:</span>
-            <input class="order-form__input" type="email" name="e-post" required />
+            <input
+              class="order-form__input"
+              type="email"
+              name="e-post"
+              required
+            />
           </label>
           <label class="order-form__field"
-            ><span class="order-form__field-name">Konteinermaja paigalduse aadress:</span>
+            ><span class="order-form__field-name"
+              >Konteinermaja paigalduse aadress:</span
+            >
             <input class="order-form__input" type="text" name="aadress" />
           </label>
           <label class="order-form__field"
             ><span class="order-form__field-name"
-              >Paigalduspinna valmidustaseme kirjeldus (paigaldusaluse seisund):</span
+              >Paigalduspinna valmidustaseme kirjeldus (paigaldusaluse
+              seisund):</span
             >
             <input class="order-form__input" type="text" name="paigalduspind" />
           </label>
           <label class="order-form__field"
-            ><span class="order-form__field-name">Orienteeruv projekti valmiduse tähtaeg:</span>
-            <input class="date-input" type="date" min="2022-01-01" max="2030-01-01" />
+            ><span class="order-form__field-name"
+              >Orienteeruv projekti valmiduse tähtaeg:</span
+            >
+            <input
+              class="date-input"
+              type="date"
+              min="2022-01-01"
+              max="2030-01-01"
+            />
           </label>
           <p class="order-form__field-name">Moodulmaja ehituse koht:</p>
           <label class="radio-btn__field" for="koht"
@@ -603,18 +631,28 @@
           >
 
           <label
-            ><span class="order-form__field-name">Palun lisage projekti fail:</span>
-            <input class="order-form__file-upload" type="file" multiple name="projekt" />
+            ><span class="order-form__field-name"
+              >Palun lisage projekti fail:</span
+            >
+            <input
+              class="order-form__file-upload"
+              type="file"
+              multiple
+              name="projekt"
+            />
           </label>
           <label
             ><span class="order-form__field-name">Märkused:</span>
             <textarea class="order-form__textarea" name="märkused"></textarea>
           </label>
-          <button class="form__button button order-form_button" type="submit">Saada</button>
+          <button class="form__button button order-form_button" type="submit">
+            Saada
+          </button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script type="module" src="./js/mobile-menu.js"></script>
+    <script type="module" src="./js/order-form-open.js"></script>
     <script type="module" src="./js/technology-modal.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   </body>
