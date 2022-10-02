@@ -9,6 +9,12 @@ const refs = {
 refs.container.addEventListener('click', onClickModalOpen);
 refs.mobContainer.addEventListener('click', onClickModalOpen);
 refs.closeBtn.addEventListener('click', onBtnClickClose);
+window.addEventListener('scroll', () => {
+  document.documentElement.style.setProperty(
+    '--scroll-y',
+    `${window.scrollY}px`
+  );
+});
 
 function onClickModalOpen(evt) {
   if (
@@ -23,13 +29,24 @@ function onClickModalOpen(evt) {
     createModalContent(evt.target)
   );
 
+  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${scrollY}`;
+
   window.addEventListener('keydown', onEscClose);
   refs.technologyBackdrop.addEventListener('click', onBackdropClickClose);
 }
 
 function onBtnClickClose() {
+  const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
   refs.technologyBackdrop.classList.add('backdrop_is-hidden');
   refs.technologyModal.innerHTML = '';
+
   refs.technologyBackdrop.removeEventListener('click', onBackdropClickClose);
   window.removeEventListener('keydown', onEscClose);
 }
@@ -45,6 +62,12 @@ function createModalContent(element) {
 
 function onEscClose(evt) {
   if (evt.key === 'Escape') {
+    const body = document.body;
+    const scrollY = body.style.top;
+    body.style.position = '';
+    body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
     refs.technologyBackdrop.classList.add('backdrop_is-hidden');
     refs.technologyModal.innerHTML = '';
   }
@@ -55,6 +78,13 @@ function onEscClose(evt) {
 
 function onBackdropClickClose(evt) {
   if (!evt.target.classList.contains('backdrop')) return;
+
+  const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
   refs.technologyBackdrop.classList.add('backdrop_is-hidden');
   refs.technologyModal.innerHTML = '';
 
