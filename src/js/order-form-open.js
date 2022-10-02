@@ -14,6 +14,8 @@ window.addEventListener('scroll', () => {
 function onHeroBtnClickModalOpen() {
   refs.orderBackdrop.classList.remove('backdrop_is-hidden');
 
+  refs.html.style.scrollBehavior = 'auto';
+
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
   const body = document.body;
   body.style.position = 'fixed';
@@ -33,6 +35,8 @@ function onOrderBtnClickModalClose() {
 
   refs.orderBackdrop.classList.add('backdrop_is-hidden');
 
+  refs.html.style.scrollBehavior = 'smooth';
+
   window.removeEventListener('keydown', onEscClose);
   refs.orderBackdrop.removeEventListener('click', onBackdropClickClose);
 }
@@ -45,6 +49,9 @@ function onEscClose(evt) {
   body.style.position = '';
   body.style.top = '';
   window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+  refs.html.style.scrollBehavior = 'smooth';
+
   window.removeEventListener('keydown', onEscClose);
   refs.orderBackdrop.removeEventListener('click', onBackdropClickClose);
 }
@@ -57,6 +64,9 @@ function onBackdropClickClose(evt) {
   body.style.position = '';
   body.style.top = '';
   window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+  refs.html.style.scrollBehavior = 'smooth';
+
   refs.orderBackdrop.removeEventListener('click', onBackdropClickClose);
   window.removeEventListener('keydown', onEscClose);
 }

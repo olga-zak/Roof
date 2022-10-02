@@ -4,6 +4,7 @@ const refs = {
   technologyBackdrop: document.querySelector('.backdrop'),
   technologyModal: document.querySelector('.technology-modal__content'),
   closeBtn: document.querySelector('.modal-button'),
+  html: document.querySelector('html'),
 };
 
 refs.container.addEventListener('click', onClickModalOpen);
@@ -29,6 +30,8 @@ function onClickModalOpen(evt) {
     createModalContent(evt.target)
   );
 
+  refs.html.style.scrollBehavior = 'auto';
+
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
   document.body.style.position = 'fixed';
   document.body.style.top = `-${scrollY}`;
@@ -43,6 +46,8 @@ function onBtnClickClose() {
   body.style.position = '';
   body.style.top = '';
   window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+  refs.html.style.scrollBehavior = 'smooth';
 
   refs.technologyBackdrop.classList.add('backdrop_is-hidden');
   refs.technologyModal.innerHTML = '';
@@ -68,6 +73,8 @@ function onEscClose(evt) {
     body.style.top = '';
     window.scrollTo(0, parseInt(scrollY || '0') * -1);
 
+    refs.html.style.scrollBehavior = 'smooth';
+
     refs.technologyBackdrop.classList.add('backdrop_is-hidden');
     refs.technologyModal.innerHTML = '';
   }
@@ -84,6 +91,8 @@ function onBackdropClickClose(evt) {
   body.style.position = '';
   body.style.top = '';
   window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+  refs.html.style.scrollBehavior = 'smooth';
 
   refs.technologyBackdrop.classList.add('backdrop_is-hidden');
   refs.technologyModal.innerHTML = '';

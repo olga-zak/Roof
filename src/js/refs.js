@@ -1,5 +1,6 @@
 export default function refsList() {
   return {
+    html: document.querySelector('html'),
     heroBtn: document.querySelector('.hero__button'),
     orderBackdrop: document.querySelector('.order__backdrop'),
     orderBtn: document.querySelector('.order__button'),
