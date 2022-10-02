@@ -89,3 +89,50 @@
   margin-top: 28px;
   align-self: center;
 }
+
+.input-file {
+  position: relative;
+  display: inline-block;
+}
+.input-file span {
+  @include font-sizing(14px, 1.23);
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  vertical-align: middle;
+  color: rgb(255 255 255);
+  text-align: center;
+  background-color: $theme-rose-color;
+  height: 40px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  transition: background-color 250ms linear, border 250ms linear,
+    color 250ms linear;
+}
+.input-file input[type='file'] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.input-file:hover span {
+  background-color: transparent;
+  border: 3px solid $theme-rose-color;
+  color: $theme-rose-color;
+}
+.input-file:active span {
+  background-color: transparent;
+  border: 3px solid $theme-rose-color;
+  color: $theme-rose-color;
+}
+
+.input-file input[type='file']:disabled + span {
+  background-color: #eee;
+}
