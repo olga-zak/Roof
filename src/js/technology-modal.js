@@ -1,11 +1,6 @@
-const refs = {
-  container: document.querySelector('.grid'),
-  mobContainer: document.querySelector('.technology__mobile-gallery'),
-  technologyBackdrop: document.querySelector('.backdrop'),
-  technologyModal: document.querySelector('.technology-modal__content'),
-  closeBtn: document.querySelector('.modal-button'),
-  html: document.querySelector('html'),
-};
+import refsList from './refs';
+
+const refs = refsList();
 
 refs.container.addEventListener('click', onClickModalOpen);
 refs.mobContainer.addEventListener('click', onClickModalOpen);

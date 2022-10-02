@@ -11,5 +11,12 @@ export default function refsList() {
     fileUploadLabel: document.querySelector(
       '.input-file .order-form__field-name'
     ),
+    container: document.querySelector('.grid'),
+    mobContainer: document.querySelector('.technology__mobile-gallery'),
+    technologyBackdrop: document.querySelector('.backdrop'),
+    technologyModal: document.querySelector('.technology-modal__content'),
+    closeBtn: document.querySelector('.modal-button'),
+    menuBtn: document.querySelector('.burger-button'),
+    mobileMenu: document.querySelector('.menu'),
   };
 }
