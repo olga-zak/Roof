@@ -30,6 +30,7 @@ function onClickModalOpen(evt) {
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
   document.body.style.position = 'fixed';
   document.body.style.top = `-${scrollY}`;
+  document.body.style.width = '100%';
 
   window.addEventListener('keydown', onEscClose);
   refs.technologyBackdrop.addEventListener('click', onBackdropClickClose);
