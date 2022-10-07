@@ -18,5 +18,6 @@ export default function refsList() {
     closeBtn: document.querySelector('.modal-button'),
     menuBtn: document.querySelector('.burger-button'),
     mobileMenu: document.querySelector('.menu'),
+    scrollBtn: document.querySelector('.btn-position'),
   };
 }
