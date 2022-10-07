@@ -598,24 +598,30 @@
             />
           </label>
           <p class="order-form__field-name">Moodulmaja ehituse koht:</p>
-          <label class="radio-btn__field" for="koht"
-            ><input
-              class="radio-btn"
-              type="radio"
-              value="meie territoriumil"
-              id="koht"
-              name="ehituse_koht"
-            />meie territoriumil</label
-          >
-          <label class="radio-btn__field radio-btn__field_second" for="koht"
-            ><input
-              class="radio-btn"
-              type="radio"
-              value="paigalduse aadressil"
-              id="koht"
-              name="ehituse_koht"
-            />paigalduse aadressil</label
-          >
+          <div class="radio__outer-wrap">
+            <div class="radio__wrap">
+              <input
+                class="radio-btn"
+                type="radio"
+                value="meie territoriumil"
+                id="kohtT"
+                name="ehituse_koht"
+              /><label class="radio-btn__field" for="kohtT"
+                >meie territoriumil</label
+              >
+            </div>
+            <div class="radio__wrap">
+              <input
+                class="radio-btn"
+                type="radio"
+                value="paigalduse aadressil"
+                id="kohtP"
+                name="ehituse_koht"
+              /><label class="radio-btn__field" for="kohtP"
+                >paigalduse aadressil</label
+              >
+            </div>
+          </div>
 
           <label class="input-file"
             ><span class="order-form__field-name"
