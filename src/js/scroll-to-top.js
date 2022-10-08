@@ -1,10 +1,11 @@
 import refsList from './refs';
+const throttle = require('lodash.throttle');
 
 const refs = refsList();
 
-document.addEventListener('scroll', btnVisibility);
+document.addEventListener('scroll', throttle(btnVisibility, 250));
 
-refs.scrollBtn.addEventListener('click', scrollToTop);
+refs.scrollBtn.addEventListener('click', throttle(scrollToTop, 250));
 
 function scrollToTop() {
   window.scrollTo({
