@@ -1,0 +1,15 @@
+.language-change {
+  display: flex;
+  margin-right: 15px;
+}
+.language-change__item:not(:last-child) {
+  margin-right: 10px;
+}
+.language-change__link {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.language-change__img {
+  margin-right: 5px;
+}

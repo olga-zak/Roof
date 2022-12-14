@@ -3,6 +3,10 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.lang-menu-wrapper {
+  display: flex;
+  align-items: center;
+}
 
 @media screen and (min-width: 1200px) {
   .navigation {
